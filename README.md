@@ -1,7 +1,7 @@
 # linux-tutorial
 linux simple code and usage
 
-<h2><span id="1_8211_SYSTEM_INFORMATION">1 &#8211; SYSTEM INFORMATION</span></h2>
+<h2><span>1 SYSTEM INFORMATION</span></h2>
 <pre># Display Linux system information
 uname -a
 
@@ -35,7 +35,7 @@ w
 # Who you are logged in as
 whoami
 </pre>
-<h2><span id="2_8211_HARDWARE_INFORMATION">2 &#8211; HARDWARE INFORMATION</span></h2>
+<h2><span>2 HARDWARE INFORMATION</span></h2>
 <pre># Display messages in kernel ring buffer
 dmesg
 
@@ -66,7 +66,7 @@ hdparm -tT /dev/sda
 # Test for unreadable blocks on disk sda
 badblocks -s /dev/sda
 </pre>
-<h2><span id="3_8211_PERFORMANCE_MONITORING_AND_STATISTICS">3 &#8211; PERFORMANCE MONITORING AND STATISTICS</span></h2>
+<h2><span>3  PERFORMANCE MONITORING AND STATISTICS</span></h2>
 <pre># Display and manage the top processes
 top
 
@@ -103,7 +103,7 @@ free -h
 # Execute "df -h", showing periodic updates
 watch df -h
 </pre>
-<h2><span id="4_8211_USER_INFORMATION_AND_MANAGEMENT">4 &#8211; USER INFORMATION AND MANAGEMENT</span></h2>
+<h2><span>4  USER INFORMATION AND MANAGEMENT</span></h2>
 <pre># Display the user and group ids of your current user.
 id
 
@@ -128,7 +128,7 @@ userdel john
 # Add the john account to the sales group
 usermod -aG sales john
 </pre>
-<h2><span id="5_8211_FILE_AND_DIRECTORY_COMMANDS">5 &#8211; FILE AND DIRECTORY COMMANDS</span></h2>
+<h2><span>5 FILE AND DIRECTORY COMMANDS</span></h2>
 <pre># List all files in a long listing (detailed) format
 ls -al
 
@@ -180,7 +180,7 @@ tail file
 # Display the last 10 lines of file and "follow" the file as it grows.
 tail -f file
 </pre>
-<h2><span id="6_8211_PROCESS_MANAGEMENT">6 &#8211; PROCESS MANAGEMENT</span></h2>
+<h2><span>6  PROCESS MANAGEMENT</span></h2>
 <pre># Display your currently running processes
 ps
 
@@ -214,7 +214,7 @@ fg
 # Brings job n to the foreground
 fg n
 </pre>
-<h2><span id="7_8211_FILE_PERMISSIONS">7 &#8211; FILE PERMISSIONS</span></h2>
+<h2><span>7 FILE PERMISSIONS</span></h2>
 <pre><img src="https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png" alt="Linux chmod example" width="890" height="341" class="aligncenter size-full wp-image-3037" srcset="https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png 890w, https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart-300x115.png 300w, https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart-768x294.png 768w" sizes="(max-width: 890px) 100vw, 890px" />
         PERMISSION      EXAMPLE
 
@@ -237,7 +237,7 @@ fg n
         x = execute
         - = no access
 </pre>
-<h2><span id="8_8211_NETWORKING">8 &#8211; NETWORKING</span></h2>
+<h2><span>8 NETWORKING</span></h2>
 <pre># Display all network interfaces and ip address
 ifconfig -a
 
@@ -275,7 +275,7 @@ wget http://domain.com/file
 netstat -nutlp
 </pre>
 <p> </p>
-<h2><span id="9_8211_ARCHIVES_TAR_FILES">9 &#8211; ARCHIVES (TAR FILES)</span></h2>
+<h2><span>9 ARCHIVES (TAR FILES)</span></h2>
 <pre># Create tar named archive.tar containing directory.
 tar cf archive.tar directory
 
@@ -294,7 +294,7 @@ tar cjf archive.tar.bz2 directory
 # Extract a bzip2 compressed tar file.
 tar xjf archive.tar.bz2
 </pre>
-<h2><span id="10_8211_INSTALLING_PACKAGES">10 &#8211; INSTALLING PACKAGES</span></h2>
+<h2><span>10 INSTALLING PACKAGES</span></h2>
 <pre># Search for a package by keyword.
 yum search keyword
 
@@ -317,7 +317,7 @@ cd sourcecode
 make
 make install
 </pre>
-<h2><span id="11_8211_SEARCH">11 &#8211; SEARCH</span></h2>
+<h2><span>11 SEARCH</span></h2>
 <pre># Search for pattern in file
 grep pattern file
 
@@ -333,7 +333,7 @@ find /home/john -name 'prefix*'
 # Find files larger than 100MB in /home
 find /home -size +100M
 </pre>
-<h2><span id="12_8211_SSH_LOGINS">12 &#8211; SSH LOGINS</span></h2>
+<h2><span >12  SSH LOGINS</span></h2>
 <pre># Connect to host as your local username.
 ssh host
 
@@ -343,7 +343,7 @@ ssh <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f5
 # Connect to host using port
 ssh -p port <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e297918790a28a8d9196">[email&#160;protected]</a>
 </pre>
-<h2><span id="13_8211_FILE_TRANSFERS">13 &#8211; FILE TRANSFERS</span></h2>
+<h2><span>13  FILE TRANSFERS</span></h2>
 <pre># Secure copy file.txt to the /tmp folder on server
 scp file.txt server:/tmp
 
@@ -359,7 +359,7 @@ rsync -a /home /backups/
 # Synchronize files/directories between the local and remote system with compression enabled
 rsync -avz /home server:/backups/
 </pre>
-<h2><span id="14_8211_DISK_USAGE">14 &#8211; DISK USAGE</span></h2>
+<h2><span >14  DISK USAGE</span></h2>
 <pre># Show free and used space on mounted filesystems
 df -h
 
@@ -375,7 +375,7 @@ du -ah
 # Display total disk usage off the current directory
 du -sh
 </pre>
-<h2><span id="15_8211_DIRECTORY_NAVIGATION">15 &#8211; DIRECTORY NAVIGATION</span></h2>
+<h2><span >15 DIRECTORY NAVIGATION</span></h2>
 <pre># To go up one level of the directory tree.  (Change into the parent directory.)
 cd ..
 
